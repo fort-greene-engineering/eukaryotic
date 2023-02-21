@@ -5,13 +5,7 @@ import Hero from './hero'
 import Marquee from './marquee'
 import DividerPhoto from './divider-photo'
 
-export const Module = ({
-  index,
-  data,
-  product,
-  activeVariant,
-  onVariantChange,
-}) => {
+export const Module = ({ index, data }) => {
   if (!data) return null
 
   switch (data._type) {

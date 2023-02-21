@@ -74,17 +74,4 @@
   &--text {
     @apply block p-32 text-48 leading-100;
   }
-
-  &--product {
-    @apply flex flex-col -my-1 max-w-[450px];
-    width: calc(80vw - 2rem);
-
-    * {
-      @apply whitespace-normal;
-    }
-
-    .product-card {
-      @apply flex-1;
-    }
-  }
 }

@@ -1,9 +1,9 @@
 {
-  "name": "hull",
+  "name": "eukaryotic",
   "private": true,
   "version": "1.0.0",
   "main": "package.json",
-  "author": "Nick DiMatteo <hello@nickdimatteo.com>",
+  "author": "Ryan Sheehan",
   "scripts": {
     "build": "sanity build",
     "start": "sanity start",

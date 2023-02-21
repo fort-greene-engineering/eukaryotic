@@ -49,13 +49,6 @@ export default {
       type: 'string',
       group: 'advanced',
     },
-    {
-      title: 'Klaviyo Site ID (Public API Key)',
-      description: 'For product waitlists and newsletter forms',
-      name: 'klaviyoAccountID',
-      type: 'string',
-      group: 'advanced',
-    },
   ],
   preview: {
     prepare() {
