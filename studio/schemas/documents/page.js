@@ -72,6 +72,7 @@ export default {
       return {
         title,
         subtitle: slug.current ? path : '(missing slug)',
+        media: Browser,
       }
     },
   },

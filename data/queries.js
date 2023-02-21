@@ -35,6 +35,15 @@ export const imageMeta = `
   "lqip": asset->metadata.lqip
 `
 
+// Construct our "file meta" GROQ
+export const fileMeta = `
+  "alt": coalesce(alt, asset->altText),
+  asset,
+  "id": asset->assetId,
+  "type": asset->mimeType,
+  "extension": asset->extension
+`
+
 // Construct our "portable text content" GROQ
 export const ptContent = `
   ...,
@@ -113,7 +122,16 @@ export const modules = `
         ${imageMeta}
       }
     },
-    video{
+    videos{
+      ...,
+      mobileVideo{
+        ${fileMeta}
+      },
+      desktopVideo{
+        ${fileMeta}
+      }
+    },
+    vimeo{
       id,
       title
     }

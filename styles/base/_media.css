@@ -40,6 +40,14 @@
 }
 
 .video-loop {
+  @apply absolute inset-0 flex items-center justify-center bg-black;
+
+  video {
+    @apply w-full h-full object-cover;
+  }
+}
+
+.vimeo-loop {
   @apply absolute inset-0 bg-black;
 
   iframe {
