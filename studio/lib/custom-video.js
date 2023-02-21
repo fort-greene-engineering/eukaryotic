@@ -8,6 +8,7 @@ export default ({ ...props } = {}) => {
     options: {
       hotspot: true,
     },
+    accept: 'video/*',
     fields: [
       {
         title: 'Alternative text',
